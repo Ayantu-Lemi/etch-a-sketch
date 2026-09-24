@@ -11,6 +11,9 @@ function createGrid(userValue = 16) {
         newDiv.className = "box";
         newDiv.style.width = `${squareSize}px`;
         newDiv.style.height = `${squareSize}px`;
+        newDiv.addEventListener('mouseenter', () => {
+            newDiv.style.backgroundColor = `#${Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0')}`;
+        });
         fragment.appendChild(newDiv);
     }
 

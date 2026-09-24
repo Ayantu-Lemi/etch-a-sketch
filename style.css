@@ -6,9 +6,9 @@ body {
 }
 
 #button {
+    display: flex;
     margin-bottom: 20px;
-    align-self: self-start;
-    justify-self: start;
+    /*justify-self: end;*/
 }
 
 #container {
@@ -26,6 +26,3 @@ body {
     box-sizing: border-box;
 }
 
-.box:hover {
-    background-color: black;
-}
